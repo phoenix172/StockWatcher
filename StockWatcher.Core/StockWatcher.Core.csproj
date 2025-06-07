@@ -20,4 +20,11 @@
         <Link>.dockerignore</Link>
       </Content>
     </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="state.json" />
+      <None Include="state.json">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
 </Project>
