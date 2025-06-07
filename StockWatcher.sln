@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34130.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockWatcher.Tests", "StockWatcher.Tests\StockWatcher.Tests.csproj", "{BBBBBBBB-2222-2222-2222-BBBBBBBBBBBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockWatcher.Core", "StockWatcher.Core\StockWatcher.Core.csproj", "{ABADB5E5-31E1-4DE0-B8EE-921DD0FBCBA3}"
+EndProject
+Global
+GlobalSection(SolutionConfigurationPlatforms) = preSolution
+				Debug|Any CPU = Debug|Any CPU
+				Release|Any CPU = Release|Any CPU
+EndGlobalSection
+GlobalSection(ProjectConfigurationPlatforms) = postSolution
+				{BBBBBBBB-2222-2222-2222-BBBBBBBBBBBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+				{BBBBBBBB-2222-2222-2222-BBBBBBBBBBBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+				{BBBBBBBB-2222-2222-2222-BBBBBBBBBBBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+				{BBBBBBBB-2222-2222-2222-BBBBBBBBBBBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	{ABADB5E5-31E1-4DE0-B8EE-921DD0FBCBA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+	{ABADB5E5-31E1-4DE0-B8EE-921DD0FBCBA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	{ABADB5E5-31E1-4DE0-B8EE-921DD0FBCBA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	{ABADB5E5-31E1-4DE0-B8EE-921DD0FBCBA3}.Release|Any CPU.Build.0 = Release|Any CPU
+EndGlobalSection
+EndGlobal

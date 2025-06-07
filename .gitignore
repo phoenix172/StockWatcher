@@ -1,0 +1,11 @@
+﻿/StockWatcher.Core/state.json
+/StockWatcher.Core/appsettings.Development.json
+
+*.suo
+*.user
+_ReSharper.*
+bin
+obj
+packages
+**/bin/
+**/obj/
