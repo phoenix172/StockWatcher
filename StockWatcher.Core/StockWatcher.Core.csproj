@@ -6,6 +6,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <UserSecretsId>dotnet-StockWatcher.Core-426259ef-083b-47bd-8970-431c18a59380</UserSecretsId>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <DockerfileFile>../Dockerfile</DockerfileFile>
     </PropertyGroup>
 
     <ItemGroup>
@@ -22,9 +23,10 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Content Remove="state.json" />
-      <None Include="state.json">
-        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      </None>
+        <Content Remove="state.json" />
+        <Content Remove="appsettings.Development.json" />
+        <None Include="appsettings.Development.json">
+          <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+        </None>
     </ItemGroup>
 </Project>
