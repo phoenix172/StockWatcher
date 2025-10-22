@@ -21,12 +21,18 @@ public class ProductSource : IProductSource
         var jsonItems = doc.DocumentNode.SelectNodes("//script[@type='application/ld+json']")?
             .Select(x=>JsonSerializer.Deserialize<JsonItem>(x.InnerText))
             .Where(x=> x?.Type == "Product").Cast<JsonItem>() ?? [];
-        var products = jsonItems.Select(product => new Product(product.Name, product.Url, GetAvailabilityMarker(product) != null));
+        var products = jsonItems.Select(product => new Product(product.Name, product.Url, IsAvailable(product)));
         return products.ToList();
         
         HtmlNodeCollection? GetAvailabilityMarker(JsonItem product)
         {
             return doc.DocumentNode.SelectNodes($"//a[@href='{product.Url}']/preceding-sibling::div[.//span/img]/span/img");
+        }
+
+        bool IsAvailable(JsonItem product)
+        {
+            var marker = GetAvailabilityMarker(product);
+            return marker?.FindFirst("img").Attributes["src"].Value.Contains("green") is true;
         }
     }
     
